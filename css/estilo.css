@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+header{
+    position: fixed;
+    margin-top: 20px;
+    margin-left: 20px;
+    z-index: 10;
+}
+.titulo{
+    background-color: rgba(255, 255, 255, 0.7);
+}
+header h1{
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #ef4135;
+    padding: 0 10px;
+}
+.biografia a{
+    color:#333333;
+}
+.biografia p{
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color:#333333;
+}
+.biografia a:hover{
+    color:#333333;
+}
+.navegacion{
+    color:#0050a4;
+}
+.contenedor{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+.imagen{
+    flex: 1;
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+.imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.imagen .capa{
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    font-size: 8em;
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+.azul{
+    color: #0050a4;
+}
+.blanco{
+    color: white;
+}
+.rojo{
+    color:#ef4135;
+}
+  
+@media (max-width: 1200px) {
+    .imagen .capa{
+        font-size: 6em;
+}
+}
+
+@media (max-width: 950px) {
+    .imagen .capa{
+        bottom: 10px;
+        text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+    }
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+    .imagen:nth-child(1) img{
+        object-position: center 6%;
+    }
+    .imagen:nth-child(2) img {
+        object-position: center;
+    }
+    .imagen:nth-child(3) img {
+        object-position: center 10.7%;
+    }
+    
+    
+}
+@media (max-width: 500px) {
+    .biografia {
+        display: none;
+    }
+    .titulo h1 {
+        display: flex;
+        flex-direction: column; 
+    }
+    .titulo{
+        margin-top: -10px;
+        margin-left: -10px;
+    }
+    .imagen .capa{
+        font-size: 4em;
+        bottom: 5px;
+        right: 20px;
+    }
+    .imagen:nth-child(1) img{
+        object-position: center 0%;
+    }
+    .imagen:nth-child(3) img {
+        object-position: center 0%;
+    }
+}

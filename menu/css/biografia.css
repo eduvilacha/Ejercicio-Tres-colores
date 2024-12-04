@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100%;
+    background: linear-gradient(to bottom, #ffffff -15%, #929292 100%);
+}
+header{
+    position: absolute;
+    margin-left: 20px;
+    padding-top: 20px;
+}
+.titulo{
+    background-color: #ffffff;
+}
+.titulo a {
+    text-decoration: none;
+}
+h1{
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #ef4135;
+    padding: 0 10px;
+}
+.navegacion{
+    color:#0050a4;
+}
+
+nav{
+    position: absolute;
+    right: 80px;
+    top: 30px;   
+}
+.enlaces {
+    list-style: none;
+    display: flex; 
+}
+.enlaces li {
+    margin-left: 60px;
+}
+
+.enlaces a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 1em;
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+section{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
+section .texto{
+    max-width: 500px;
+    margin: 10px 0;
+}
+p{
+    font-size: 16px;
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.7);
+}
+section .imagen{
+    background-color: white;
+    border: 1px solid #777;
+    padding: 10px 10px 5px 10px;
+}
+.imagen img{
+max-width: calc(500px - 21px);
+}
+
+@media (max-width: 950px){
+    .barra{
+    position: absolute;
+    left: -40px;
+    top: 85px;
+    }
+    section{
+        padding-top: 140px;
+    }
+}    
+    
+@media (max-width: 500px) {
+        section .texto{
+            max-width: 80%;
+        }
+}
